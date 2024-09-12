@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>ระบบสื่อสารและประชาสัมพันธ์ โรงพยาบาลยะลา</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="assets/css/main.css" />
+
+        <style>
+            * {
+                font-family: "Noto Sans Thai", sans-serif;
+            }
+        </style>      
+	</head>
+
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a class="logo"><strong><font style="font-size:40px">ระบบสื่อสารและประชาสัมพันธ์</strong> โรงพยาบาลยะลา</font></a>
+								</header>
+                                <br>
+
+                            <!--SLide-Show-->
+                                
+                                <body>
+                                <link rel="stylesheet" href="assets/css/main.css" /> 
+                                <div class="slideshow-container">         
+                                
+                                <div class="mySlides fade">
+                                  <img src="picture/S1.png" style="width:100%">
+                                </div>
+                                
+                                <div class="mySlides fade">
+                                  <img src="picture/S2.png" style="width:100%">
+                                </div>
+                                
+                                <div class="mySlides fade">
+                                  <img src="picture/S3.png" style="width:100%">
+                                </div>
+                                
+                                <div style="text-align:center">
+                                  <span class="dot" onclick="currentSlide(1)"></span> 
+                                  <span class="dot" onclick="currentSlide(2)"></span> 
+                                  <span class="dot" onclick="currentSlide(3)"></span> 
+                                </div>
+                                
+                                </div>
+                                <br>
+    
+                                  <script>
+                                    let slideIndex = 0;
+                                    showSlides();
+                                    
+                                    function showSlides() {
+                                      let i;
+                                      let slides = document.getElementsByClassName("mySlides");
+                                      let dots = document.getElementsByClassName("dot");
+                                      for (i = 0; i < slides.length; i++) {
+                                        slides[i].style.display = "none";  
+                                      }
+                                      slideIndex++;
+                                      if (slideIndex > slides.length) {slideIndex = 1}    
+                                      for (i = 0; i < dots.length; i++) {
+                                        dots[i].className = dots[i].className.replace(" active", "");
+                                      }
+                                      slides[slideIndex-1].style.display = "block";  
+                                      dots[slideIndex-1].className += " active";
+                                      setTimeout(showSlides, 5000); // Change image every 5 seconds
+                                    }
+                                    </script>
+                          
+							<!-- Banner -->
+								<section id="banner">
+									<div class="content">
+										<header>
+											
+								</section>		
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner">
+
+						
+
+							<!-- Menu -->
+								<nav id="menu">
+										<h2><img src="picture/logoyh.png" style="width:30%"></h2>
+									<ul>
+										<li><a href="Home.html"><img src="picture/logohome.png" style="width:10%">&nbsp;&nbsp;<font style="font-size:30px">Home</font></a></li>
+										<li><a href="แบบฟอร์มขอผลิต.html"><font style="font-size:25px">แบบฟอร์มขอผลิตสื่อ</font></a></li>
+										<li><a href="สถานะการผลิต.html"><font style="font-size:25px">สถานะการผลิต</font></a></li>
+										
+							
+
+						</div>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+           
+	</body>
+</html>

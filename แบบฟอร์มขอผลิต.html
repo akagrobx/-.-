@@ -37,7 +37,9 @@
                                    
                                         
                                         <div>
-                                          <form action="/action_page.php">
+                                          <form action="/action_page.php"><font style="font-size:25px">
+                                            <b><font color="red">กรุณากรอกแบบฟอร์มขอใช้บริการให้ครบถ้วน และถูกต้อง</font></b> 
+                                            <br><font style="font-size:20px" color="black">ติดต่อสอบถามเพิ่มเติม โทร. 8633</font><br><br>
                                             <label for="fname">(คำนำหน้า) ชื่อ-สกุล : </label>
                                             <input type="text" id="fname" name="firstname" placeholder="กรอกรายละเอียดให้ครบถ้วน"><br>
                                         
@@ -50,8 +52,7 @@
                                             <label for="lname">เบอร์ติดต่อ (โทรศัพท์) :</label>
                                             <input type="text" id="lname" name="lastname" placeholder="กรอกรายละเอียดให้ครบถ้วน"><br>
                               
-                                         <b><font color="red">****************************</b></font><br><br>
-                                        
+                                          <b><font color="red">รายละเอียดการประชาสัมพันธ์</b></font><br><br>
                                          <label for="lname">ชื่อเรื่อง (หัวข้อในการผลิต) :</label>
                                          <input type="text" id="lname" name="lastname" placeholder="กรอกรายละเอียดให้ครบถ้วน"><br>
 
@@ -90,7 +91,7 @@
                                          <!--ทดสอบแนบไฟล์-->
                                          <label for="lname">แนบไฟล์ :</label> <form method="post" action="upload.php" name="post_topic" enctype="multipart/form-data">
                                             <!-- จะใช้ชื่อฟิลด์เป็น Array นะครับ เพราะจะได้อัพโหลดได้หลายไฟล์ไง -->
-                                            <input name="filesattach_name[]" id="filesattach_name" type="file" size="30" multiple="multiple" /> </form>
+                                            <input name="filesattach_name[]" id="filesattach_name" type="file" size="30" multiple="multiple" /> </form><br><br>
                                             
                                             <label for="lname">ช่องทางการรับไฟล์ :</label>
                                             <input type="text" id="lname" name="lastname" placeholder="กรอกรายละเอียดให้ครบถ้วน"><br>   
@@ -98,6 +99,7 @@
                                             <br>
                                             <input type="submit" value="บันทึกและส่ง">
                                           </form>
+                                        </font>
                                         </div>
                                         
 
